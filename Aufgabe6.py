@@ -9,7 +9,7 @@ print(var1+var3)
 Aufgabe6 = 'Australia'
 print(Aufgabe6[0:5],Aufgabe6[7:9],sep="")
 
-#Version 4
+#Version 3
 Aufgabe6 = 'Australia'
 stop2 = 5
 sliced_object2 = slice(stop2)
