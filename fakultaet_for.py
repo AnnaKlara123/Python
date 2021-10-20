@@ -16,11 +16,10 @@ while True: # ist eine Endlossschleife
     # Berechnung der Fakultät
 
     ergebnis = 1
-    while zahl > 0:
-        print(ergebnis,zahl)
-        ergebnis = ergebnis *zahl
-        zahl = zahl - 1
-    print ("Ergebnis: ", ergebnis)
     
+    for i in range(2, zahl+1):
+        ergebnis = ergebnis * i
+    print("Ergebins: ", ergebnis)
+
     
 print("done")
