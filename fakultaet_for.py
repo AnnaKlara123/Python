@@ -17,7 +17,7 @@ while True: # ist eine Endlossschleife
 
     ergebnis = 1
     
-    for i in range(2, zahl+1):
+    for i in range(2, zahl+1): # i muss man in deim Fall nicht definieren!
         ergebnis = ergebnis * i
     print("Ergebins: ", ergebnis)
 
