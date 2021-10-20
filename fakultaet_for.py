@@ -12,5 +12,15 @@ while True: # ist eine Endlossschleife
 
     else: 
         print(zahl, "Die Eingabe ist korrekt")
+
+    # Berechnung der Fakultät
+
+    ergebnis = 1
+    while zahl > 0:
+        print(ergebnis,zahl)
+        ergebnis = ergebnis *zahl
+        zahl = zahl - 1
+    print ("Ergebnis: ", ergebnis)
+    
     
 print("done")
