@@ -21,10 +21,10 @@
 
 eingabe = input("Enter something:")
 for x in eingabe:
-    if x >= 'A' and x <= 'Z':
-            print("false")
-    else:
-            print("true")
+    if x.isupper():
+            print(x.lower())
+    elif x.islower():
+            print(x.upper())
 
 print("done")
 
