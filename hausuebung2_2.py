@@ -20,9 +20,9 @@
 # print("done")
 
 eingabe = input("Enter something:")
-for x in eingabe:
-    if x.isupper():
-            print(x.lower())
+for x in eingabe: # zählt jeden Buchstaben einzeln
+    if x.isupper(): # checkt, ob Buchstabe GROSS oder klein ist
+            print(x.lower()) # gibt Buchstabe jeweils gegenteilig zurück
     elif x.islower():
             print(x.upper())
 
