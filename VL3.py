@@ -10,5 +10,8 @@ def fakultaet(zahl): # hier die Variable "Zahl" durch in die Klammern schreiben 
         ergebnis = ergebnis * i
     print("Ergebins: ", ergebnis)
 # MAIN
+while True:
+    zahl = int(input("Eingabe: "))
+    fakultaet(zahl) # DAS ist der AUFRUF bzw. DURCHFÜHRUNG der Funktion!!! 
 
 print("done")
