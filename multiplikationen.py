@@ -18,7 +18,7 @@ wert3 = 6
 wert4 = 6
 
 #funktionsaufruf
-erg1 = (wert1, wert2, wert3, wert4)
+erg1 = multi(wert1, wert2, wert3, wert4)
 
 print(erg1)
 print("done")
