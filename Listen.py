@@ -19,6 +19,7 @@ outlist2 =[]
 for i in NestedList:
     for j in i:
         outlist1.insert(0,j) # gesammte Sequenz plus einzelne Listen umkehren 
+        print(i,j, outlist1)
     outlist2.insert(0, outlist1) # kehrt auch die inneren Klammern um
     outlist1 = []  # Leert die outlist1 Liste wieder!
 
