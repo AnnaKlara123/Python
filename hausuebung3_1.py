@@ -11,8 +11,9 @@ b = 2
 c = 6
 d = 6
 
-# Funktion aufrufen (Funktionsname steht im externen file. Da dieses importiert wird kann direkt daruf zugegriffen werden) 
+# Funktion aufrufen (Funktionsname steht im externen file. Je nach import Art kann direkt daruf zugegriffen werden oder mit VerweisAufFile.Funktion) 
 ergebnis = mytools.calcfacult(a,b,c,d)
+# alternativ: ergebnis = calcfacult(a,b,c,d)
 
 print(ergebnis)
 print("done")
