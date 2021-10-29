@@ -5,7 +5,7 @@
 import mytools
 # Alternativ:  from mytools import *
 
-# #MAIN Var. der Funktion definieren 
+# #MAIN Parameter der Funktion definieren 
 a = 4
 b = 2
 c = 6
