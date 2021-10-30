@@ -9,10 +9,10 @@ def dist(x1, x2, y1, y2): # Funktion deniniert: sie erwartet 4 Argumente und ink
     dx = x2 - x1
     dy = y2 -y1
     d = math.sqrt(dx**2 + dy**2)
-    return d # d ist die Länge!
+    return d # d ist die Seitenlänge!
 
 # Main
-i = list(map(int, input("Numbers: ").split())) # Eingabe als Liste einlesen 
+i = list(map(int, input("Please enter 4 numbers. The first one counts as x1, second as x2, thrird as y1, forth as y2: ").split())) # Eingabe als Liste einlesen 
 print(i) 
 
 x1 = i[0]
