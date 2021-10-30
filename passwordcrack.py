@@ -2,13 +2,10 @@
  # zuerst alle möglichen Buchstarben/Zahlen/Zeichen angeben
  # dann Passwort als Imput (soll aus 4 zeichen bestehen)
 
-from typing import Counter
+possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?_" # das sind die möglichen Eingegebenen Zeichen
+password = input("Gib ein Passwort (4 Zeichen)an: ") # das ist das selbst bestimmte Passwort 
 
-
-possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?_"
-password = input("Gib ein Passwort (4 Zeichen)an: ")
-
-for letter1 in possible:    
+for letter1 in possible:    # hier teste ich das erste eingegebene Zeichen
     for letter2 in possible:
         for letter3 in possible:
             for letter4 in possible: # Buchstaben auf richtigkeit kontrollieren 
@@ -25,7 +22,7 @@ for letter1 in possible:
 
 print("done")
 
-# Kombinationen: 
+# möglich Anzahl an Kombinationen: 
 laenge = len(possible)
 anzahl = laenge**4
 print(anzahl)
