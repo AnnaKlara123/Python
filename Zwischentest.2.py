@@ -16,32 +16,28 @@ def dif(vw,vk):
     return differ
 
 #Main
-s = int(input("Geben Sie die Seitenlänge an: "))
-r = int(input("Geben Sie den Radius an: "))
+s=r = int(input("Geben Sie die Seitenlänge, bzw. den Radius an: "))
 
-for i in range(1,11,1):
+for i in range(1,11):
     if i == 1:
-        print(i)
-        vol = qurd(s) # Berechnung des WürfelVolumens erste Iteration
-        # print(vol)
-        print("Das Volumen des" , 1 ,"ten Würfels beträgt", vol, "m^3")
-        volk = kugel(r) #Berechnung des Kugelvolumens erste Iteration
+        print(i,"te Iteration")
+        vw = qurd(s) # Berechnung des WürfelVolumens durch Aufrufen der Funktion quad als erste Iteration und Speicherung des Werts als Variable
+        print("Das Volumen des" , 1 ,"ten Würfels beträgt", vw, "m^3")
+        vk = kugel(r) #s.o. nur für Kugel
         # print(volk)
-        print("Das Volumen der" , 1 ,"ten Kugel beträgt", volk, "m^3")
-        vw = vol
-        vk = volk
+        print("Das Volumen der" , 1 ,"ten Kugel beträgt", vk, "m^3")
         absolutdiff = dif(vw, vk) # Berechnung der Differenz der beiden Volumen 
         print("Die Differenz beträgt: ", absolutdiff)
         
-    elif i<11 and i>1:
-            print(i)
-            vol2=qurd(s+i)        
-            volk2=kugel(r+i)
-            vw = vol2
-            vk = volk2
+    elif i<11 and i>1: # Berechnung des Volumens für die anderen 9 Iterationen
+            print(i,"te Iteration")
+            vw=qurd(s+i)        # +i um jeweils Plus 1 zu rechnen 
+            vk=kugel(r+i)
+            # vw = vol2
+            # vk = volk2
             absolutdiff = dif(vw, vk)
-            print("Das Volumen des" , i ,"ten Würfels beträgt", vol2, "m^3")
-            print("Das Volumen des" , i ,"ten Würfels beträgt", volk2, "m^3")
+            print("Das Volumen des" , i ,"ten Würfels beträgt", vw, "m^3")
+            print("Das Volumen des" , i ,"ten Würfels beträgt", vk, "m^3")
             print("Die Differenz beträgt: ", absolutdiff)
 print("done")
 
