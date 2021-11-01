@@ -2,7 +2,7 @@
 
 NestedList = [[2,3,4],[0,6,1,4],[1,2]]
 # meine Variante:  print(NestedList[::-1])
-outlist =[]  # Prof Variante 1
+outlist =[]  # Prof Variante 1 # Leere Liste erstellen, die dann befüllt werden kann 
 for i in NestedList:
     print(i)
     outlist.insert(0,i) # gesammte Sequenz umkehren
