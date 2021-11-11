@@ -12,22 +12,17 @@ def dist(x1, x2, y1, y2): # Funktion deniniert: sie erwartet 4 Argumente und ink
     return d # d ist die Seitenlänge!
 
 # Main
-i = list(map(int, input("Please enter 4 numbers. The first one counts as x1, second as x2, thrird as y1, forth as y2: ").split())) # Eingabe als Liste einlesen 
-print(i) 
+i = list(map(int, input("Please enter 4 numbers. The first one counts as x1, second as x2, thrird as y1, forth as y2.  Be sure to separate the numbers with a tab:  ").split())) # Eingabe als Liste einlesen 
+print(i) # Eingabe der Parameter werden als Liste gespeichert
 
-x1 = i[0]
+x1 = i[0] # Parameter werden aus der Liste abgerufen 
 x2 = i[1]
 y1 = i[2]
 y2 = i[3]
 
-# print (x1)
-# print (x2)
-# print (y1)
-# print (y2)
-
 # Call function
 var2 = dist(x1,x2, y1, y2)
-print(var2)
+print("The calculated sidelength is:", var2)
 
 
  # Direkte Berechnung mit vorgegebennen Zahlen 
