@@ -17,8 +17,9 @@ for i in range (1000):
 mylist = []
 
 for i in zufall:
+    # print("i =",i) # i sind jeweiligen Zahlen 
     # wenn es schon ein Tupel [i,zufall,count(i)] gibt, wird dieses zunächst gelöscht und anschließend ein neues Tupel hinzugefügt
-    if (i,zufall.count(i)) in mylist:
+    if (i,zufall.count(i)) in mylist: # ZUfallsliste nach Zahl i durchsuchen und alle i zählen 
         mylist.remove((i,zufall.count(i)))
         mylist.append((i,zufall.count(i)))
     else:

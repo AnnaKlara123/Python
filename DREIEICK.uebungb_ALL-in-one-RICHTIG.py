@@ -35,8 +35,8 @@ for i in range(0, iterat,1): # Schrittzahl eventuell später noch definieren
     if i == 0:
         # h = hight(a,c)+weit
         # b = b 
-        area1 = flaeche(a,b,c)
-        print(i, "-te Runde")
+        area1 = flaeche(a,b,c) # funktionsaufruf
+        print(i+1, "-te Runde")
         print("Die gleichlangen Seiten betragen", a)
         print("Die dritte Seitenlänge bertägt",c )
         print("die Fläche beträgt: ", area1)
@@ -49,7 +49,7 @@ for i in range(0, iterat,1): # Schrittzahl eventuell später noch definieren
         area2 = flaeche(a,b,c)
         scope2  = scope(a, b, c)
         
-        print(i, "-te Runde")
+        print(i+1, "-te Runde")
         print("Die gleichlangen Seiten betragen", a)
         print("Die dritte Seitenlänge bertägt",c)
         print("die Fläche beträgt: ", area2)
